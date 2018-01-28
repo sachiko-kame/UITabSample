@@ -9,8 +9,7 @@
 import UIKit
 
 class SampleViewController: UIViewController {
-    @IBOutlet weak var pageLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
