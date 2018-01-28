@@ -8,6 +8,7 @@
 
 import UIKit
 
+//参考:http://uruly.xyz/%E3%80%90swift-3%E3%80%91uipagecontroller%E3%81%A8uinavigationcontroller%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%97%E3%81%A7%E7%94%BB%E9%9D%A2%E5%88%87%E3%82%8A%E6%9B%BF/
 class ViewController: UIPageViewController,UIPageViewControllerDataSource,UIPageViewControllerDelegate,UICollectionViewDelegateFlowLayout{
     
     let viewframewidth:CGFloat = UIScreen.main.bounds.size.width
@@ -46,6 +47,12 @@ class ViewController: UIPageViewController,UIPageViewControllerDataSource,UIPage
         collectionView.delegate = self
         
         view.addSubview(collectionView)
+        
+        for view in self.view.subviews{
+            if(view.isKind(of: UIScrollView.self)){
+                (view as! UIScrollView).delegate = self
+            }
+        }
         
     }
 
@@ -138,5 +145,16 @@ extension ViewController:UICollectionViewDataSource, UICollectionViewDelegate{
         self.setViewControllers([pageControllergrop[indexPath.row]], direction: .forward, animated: false, completion: nil)
     }
     
+}
+
+extension ViewController{
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print(scrollView.className)
+        if(scrollView.className ==  "UICollectionView"){
+            return
+        }
+        print("スクロール中")
+    }
 }
 
