@@ -15,5 +15,10 @@ class SampleCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func Set(){
+        CategoryNameLabel.layer.borderColor = UIColor.blue.cgColor
+        CategoryNameLabel.layer.borderWidth = 10
+    }
 
 }
