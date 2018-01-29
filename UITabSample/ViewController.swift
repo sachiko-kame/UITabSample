@@ -14,11 +14,12 @@ class ViewController: UIPageViewController,UIPageViewControllerDataSource,UIPage
     let viewframewidth:CGFloat = UIScreen.main.bounds.size.width
     var statusBarHeight:CGFloat = UIApplication.shared.statusBarFrame.height
     
-    let pagelist = ["PAGE0", "PAGE1", "PAGE2", "PAGE3", "PAGE4"]
+    let pagelist = ["PAGE0", "PAGE1", "PAGE2", "PAGE3", "PAGE4", "PAGE5", "PAGE6", "PAGE7", "PAGE8", "PAGE9"]
     var pageControllergrop = [UIViewController]()
     
     var collectionView:UICollectionView!
     let labeheight:CGFloat = 60
+    var page:Int = 0
     
 
     required init?(coder aDecoder: NSCoder) {
@@ -94,6 +95,7 @@ class ViewController: UIPageViewController,UIPageViewControllerDataSource,UIPage
 extension ViewController{
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         let index:Int = pageControllergrop.index(of: viewController)!
+        page = index
     
         view.viewWithTag(index + 1)?.backgroundColor = UIColor.gray
         //1ページ何もしない
@@ -109,6 +111,7 @@ extension ViewController{
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         let index:Int = pageControllergrop.index(of: viewController)!
+        page = index
         
         view.viewWithTag(index + 1)?.backgroundColor = UIColor.gray
         switch index {
@@ -150,11 +153,22 @@ extension ViewController:UICollectionViewDataSource, UICollectionViewDelegate{
 extension ViewController{
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print(scrollView.className)
         if(scrollView.className ==  "UICollectionView"){
             return
         }
-        print("スクロール中")
+        let LeftRightJug = viewframewidth - scrollView.contentOffset.x
+        if(LeftRightJug == 0){
+            return
+        }
+        let Move = scrollView.contentOffset.x / 3
+        let first:Int = LeftRightJug > 0 ? 1 : 0
+        let End:Int = LeftRightJug > 0 ? (pagelist.count - 1) : (pagelist.count - 2)
+        if(first < page && page < End){
+            let pageWidth = CGFloat(page - 2) * viewframewidth //タブ真ん中に
+            let TabPageWidth = pageWidth / 3
+            
+            collectionView.contentOffset = CGPoint(x:Move + TabPageWidth, y:0)
+        }
     }
 }
 
