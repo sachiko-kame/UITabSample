@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841BC59F20306E4400430CA2 /* defalt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BC59E20306E4400430CA2 /* defalt.swift */; };
 		8448F047201DE9BB00DBFC74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F046201DE9BB00DBFC74 /* AppDelegate.swift */; };
 		8448F049201DE9BB00DBFC74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F048201DE9BB00DBFC74 /* ViewController.swift */; };
 		8448F04C201DE9BB00DBFC74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448F04A201DE9BB00DBFC74 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841BC59E20306E4400430CA2 /* defalt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defalt.swift; sourceTree = "<group>"; };
 		8448F043201DE9BB00DBFC74 /* UITabSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITabSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448F046201DE9BB00DBFC74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8448F048201DE9BB00DBFC74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				8448F046201DE9BB00DBFC74 /* AppDelegate.swift */,
+				841BC59E20306E4400430CA2 /* defalt.swift */,
 				8448F048201DE9BB00DBFC74 /* ViewController.swift */,
 				8448F04A201DE9BB00DBFC74 /* Main.storyboard */,
 				84655A90201DECC70087E488 /* Parts */,
@@ -316,6 +319,7 @@
 				8448F047201DE9BB00DBFC74 /* AppDelegate.swift in Sources */,
 				84655A95201DED270087E488 /* SampleCollectionViewCell.swift in Sources */,
 				84655A8E201DEBD50087E488 /* SampleViewController.swift in Sources */,
+				841BC59F20306E4400430CA2 /* defalt.swift in Sources */,
 				84655A98201DF11A0087E488 /* UICollectionViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

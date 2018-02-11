@@ -10,9 +10,6 @@ import UIKit
 
 class ViewController: UIPageViewController,UIPageViewControllerDataSource,UIPageViewControllerDelegate,UICollectionViewDelegateFlowLayout{
     
-    let viewframewidth:CGFloat = UIScreen.main.bounds.size.width
-    var statusBarHeight:CGFloat = UIApplication.shared.statusBarFrame.height
-    
     let pagelist = ["PAGE0", "PAGE1", "PAGE2", "PAGE3", "PAGE4", "PAGE5", "PAGE6", "PAGE7", "PAGE8", "PAGE9"]
     var pageControllergrop = [UIViewController]()
     

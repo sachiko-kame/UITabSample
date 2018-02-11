@@ -9,7 +9,6 @@
 import UIKit
 
 class SampleViewController: UIViewController {
-    let viewframewidth:CGFloat = UIScreen.main.bounds.size.width
 
     override func viewDidLoad() {
         super.viewDidLoad()
