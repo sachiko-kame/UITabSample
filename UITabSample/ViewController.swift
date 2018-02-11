@@ -8,7 +8,6 @@
 
 import UIKit
 
-//参考:http://uruly.xyz/%E3%80%90swift-3%E3%80%91uipagecontroller%E3%81%A8uinavigationcontroller%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%97%E3%81%A7%E7%94%BB%E9%9D%A2%E5%88%87%E3%82%8A%E6%9B%BF/
 class ViewController: UIPageViewController,UIPageViewControllerDataSource,UIPageViewControllerDelegate,UICollectionViewDelegateFlowLayout{
     
     let viewframewidth:CGFloat = UIScreen.main.bounds.size.width
@@ -75,15 +74,7 @@ class ViewController: UIPageViewController,UIPageViewControllerDataSource,UIPage
     func makeViewcontoller(){
         for i in 0...(pagelist.count - 1){
             let viewController:SampleViewController = SampleViewController()
-            let Label = UILabel(frame:CGRect.zero)
-            Label.frame.size = CGSize(width:viewframewidth, height:100)
-            Label.center = viewController.view.center
-            Label.text = pagelist[i]
-            Label.textAlignment = .center
-            Label.layer.borderColor = UIColor.blue.cgColor
-            Label.layer.borderWidth = 1
-            viewController.view.backgroundColor = .white
-            viewController.view.addSubview(Label)
+            viewController.Set(Text:pagelist[i])
             self.pageControllergrop.append(viewController)
         }
     }

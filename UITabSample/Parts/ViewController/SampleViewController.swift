@@ -9,6 +9,7 @@
 import UIKit
 
 class SampleViewController: UIViewController {
+    let viewframewidth:CGFloat = UIScreen.main.bounds.size.width
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,5 +18,17 @@ class SampleViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
+    }
+    
+    func Set(Text:String){
+        let Label = UILabel(frame:CGRect.zero)
+        Label.frame.size = CGSize(width:viewframewidth, height:100)
+        Label.center = self.view.center
+        Label.text = Text
+        Label.textAlignment = .center
+        Label.layer.borderColor = UIColor.blue.cgColor
+        Label.layer.borderWidth = 1
+        self.view.backgroundColor = .white
+        self.view.addSubview(Label)
     }
 }
