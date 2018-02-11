@@ -127,8 +127,7 @@ extension ViewController:UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         collectionView.register(cellType: SampleCollectionViewCell.self)
         let cell:SampleCollectionViewCell = collectionView.dequeueReusableCell(with: SampleCollectionViewCell.self, for: indexPath)
-        cell.CategoryNameLabel.text = pagelist[indexPath.row]
-        cell.Set()
+        cell.Set(Text:pagelist[indexPath.row])
         return cell
     }
     
