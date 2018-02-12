@@ -16,7 +16,6 @@
 		8448F05C201DE9BB00DBFC74 /* UITabSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F05B201DE9BB00DBFC74 /* UITabSampleTests.swift */; };
 		8448F067201DE9BB00DBFC74 /* UITabSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F066201DE9BB00DBFC74 /* UITabSampleUITests.swift */; };
 		84655A8E201DEBD50087E488 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84655A8C201DEBD50087E488 /* SampleViewController.swift */; };
-		84655A8F201DEBD50087E488 /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84655A8D201DEBD50087E488 /* SampleViewController.xib */; };
 		84655A95201DED270087E488 /* SampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84655A93201DED270087E488 /* SampleCollectionViewCell.swift */; };
 		84655A96201DED270087E488 /* SampleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84655A94201DED270087E488 /* SampleCollectionViewCell.xib */; };
 		84655A98201DF11A0087E488 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84655A97201DF11A0087E488 /* UICollectionViewExtension.swift */; };
@@ -56,7 +55,6 @@
 		8448F066201DE9BB00DBFC74 /* UITabSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabSampleUITests.swift; sourceTree = "<group>"; };
 		8448F068201DE9BB00DBFC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84655A8C201DEBD50087E488 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
-		84655A8D201DEBD50087E488 /* SampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
 		84655A93201DED270087E488 /* SampleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewCell.swift; sourceTree = "<group>"; };
 		84655A94201DED270087E488 /* SampleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleCollectionViewCell.xib; sourceTree = "<group>"; };
 		84655A97201DF11A0087E488 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				84655A8C201DEBD50087E488 /* SampleViewController.swift */,
-				84655A8D201DEBD50087E488 /* SampleViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -288,7 +285,6 @@
 				8448F051201DE9BB00DBFC74 /* LaunchScreen.storyboard in Resources */,
 				84655A96201DED270087E488 /* SampleCollectionViewCell.xib in Resources */,
 				8448F04E201DE9BB00DBFC74 /* Assets.xcassets in Resources */,
-				84655A8F201DEBD50087E488 /* SampleViewController.xib in Resources */,
 				8448F04C201DE9BB00DBFC74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
