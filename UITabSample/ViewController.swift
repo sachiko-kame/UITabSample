@@ -45,11 +45,9 @@ class ViewController: UIPageViewController,UIPageViewControllerDataSource,UIPage
         
         view.addSubview(collectionView)
         
-        for view in self.view.subviews{
-            if(view.isKind(of: UIScrollView.self)){
-                (view as! UIScrollView).delegate = self
-            }
-        }
+        self.view.subviews
+            .filter{ $0.isKind(of: UIScrollView.self) }
+            .forEach{($0 as! UIScrollView).delegate = self }
         
     }
 
