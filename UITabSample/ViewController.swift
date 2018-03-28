@@ -69,6 +69,7 @@ class ViewController: UIPageViewController,UIPageViewControllerDataSource,UIPage
     func makeViewcontoller(){
         for i in 0...(pagelist.count - 1){
             let viewController:SampleViewController = SampleViewController()
+            viewController.view.tag = i
             viewController.Set(Text:pagelist[i])
             self.pageControllergrop.append(viewController)
         }
@@ -108,8 +109,24 @@ extension ViewController{
             //最終ページでない場合進める
             return pageControllergrop[index+1]
         }
-        
     }
+    
+    
+    //実装に関係ありません
+    func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]){
+        if let viewController = pendingViewControllers[0] as? SampleViewController {
+            // 2
+            print("🦁\(viewController.view.tag)")
+        }
+    }
+    
+    
+    //実装に関係ありません
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool){
+        let a = pageViewController.viewControllers!.first!.view.tag
+        print("🐢\(a)")
+    }
+
 }
 
 

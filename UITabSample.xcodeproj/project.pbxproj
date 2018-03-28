@@ -15,6 +15,7 @@
 		8448F051201DE9BB00DBFC74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448F04F201DE9BB00DBFC74 /* LaunchScreen.storyboard */; };
 		8448F05C201DE9BB00DBFC74 /* UITabSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F05B201DE9BB00DBFC74 /* UITabSampleTests.swift */; };
 		8448F067201DE9BB00DBFC74 /* UITabSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448F066201DE9BB00DBFC74 /* UITabSampleUITests.swift */; };
+		844C7130206804930076E1B6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C712F206804930076E1B6 /* UIViewExtension.swift */; };
 		84655A8E201DEBD50087E488 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84655A8C201DEBD50087E488 /* SampleViewController.swift */; };
 		84655A95201DED270087E488 /* SampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84655A93201DED270087E488 /* SampleCollectionViewCell.swift */; };
 		84655A96201DED270087E488 /* SampleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84655A94201DED270087E488 /* SampleCollectionViewCell.xib */; };
@@ -54,6 +55,7 @@
 		8448F062201DE9BB00DBFC74 /* UITabSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITabSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448F066201DE9BB00DBFC74 /* UITabSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabSampleUITests.swift; sourceTree = "<group>"; };
 		8448F068201DE9BB00DBFC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844C712F206804930076E1B6 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		84655A8C201DEBD50087E488 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		84655A93201DED270087E488 /* SampleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewCell.swift; sourceTree = "<group>"; };
 		84655A94201DED270087E488 /* SampleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				84655A97201DF11A0087E488 /* UICollectionViewExtension.swift */,
 				84655A9A201DF4500087E488 /* NSObjectExtension.swift */,
+				844C712F206804930076E1B6 /* UIViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				84655A95201DED270087E488 /* SampleCollectionViewCell.swift in Sources */,
 				84655A8E201DEBD50087E488 /* SampleViewController.swift in Sources */,
 				841BC59F20306E4400430CA2 /* defalt.swift in Sources */,
+				844C7130206804930076E1B6 /* UIViewExtension.swift in Sources */,
 				84655A98201DF11A0087E488 /* UICollectionViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BS3A226T4;
 				INFOPLIST_FILE = UITabSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sachiko.UITabSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,6 +505,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BS3A226T4;
 				INFOPLIST_FILE = UITabSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sachiko.UITabSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
